@@ -21,7 +21,8 @@ import io.github.curso.todo.repository.TodoRepository;
 
 @RestController
 @RequestMapping("/api/todos")
-@CrossOrigin("http://localhost:4200")
+@CrossOrigin(origins = {"http://localhost:4200", "https://palma-first-api.herokuapp.com/api/todos"})
+
 public class TodoController {
 	
 	@Autowired
